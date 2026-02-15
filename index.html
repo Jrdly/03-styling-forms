@@ -38,7 +38,47 @@
       <div class="reservation-card">
         <h2>Reserve Now</h2>
         <div class="form-placeholder">
-          [Reservation Form Placeholder]
+          <form>
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Name</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Email</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="zipCodeInput" class="form-label">Zip Code</label>
+              <input type="text" class="form-control" id="zipCodeInput" placeholder="Enter your zip code" required>
+            </div>
+            <div class="mb-3">
+              <label for="partySizeInput" class="form-label">Party Size</label>
+              <input type="number" class="form-control" id="partySizeInput" min="1" max="20" placeholder="Number of guests" required>
+            </div>
+            <div class="mb-3">
+              <label for="adventureLevelSelect" class="form-label">Adventure Level</label>
+              <select class="form-select" id="adventureLevelSelect" required>
+                <option value="" selected>Choose your adventure level</option>
+                <option value="mild">Mild - Keep it familiar</option>
+                <option value="medium">Medium - A bit of surprise</option>
+                <option value="spicy">Spicy - Challenge my palate</option>
+                <option value="extreme">Extreme - Total mystery!</option>
+              </select>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="birthdayCheck">
+              <label class="form-check-label" for="birthdayCheck">
+                Would you like to pretend it's your birthday for free cake?
+              </label>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="acceptCheck" required>
+              <label class="form-check-label" for="acceptCheck">
+                I accept that I have no idea where I'll be eating, and that's OK.
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit Reservation</button>
+          </form>
         </div>
       </div>
     </div>
